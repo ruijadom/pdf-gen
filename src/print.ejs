@@ -4,42 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Items</title>
+    <title>pdfgen</title>
 
     <link
       href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
       rel="stylesheet"
     />
-
-    <style>
-      table {
-        width: 100%;
-      }
-
-      th {
-        text-align: left;
-      }
-    </style>
   </head>
-  <body class="bg-green-500">
-    <div class="m-8">
-      <h1 class="text-3xl mb-8">Items</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% if (items.length > 0) { %> <% items.forEach(item =>
-          { %>
-          <tr>
-            <td><%= item.name %></td>
-          </tr>
-          <% }); %> <% } %>
-        </tbody>
-        
-      </table>
+
+  <body class="bg-black">
+    <div class="m-8 text-gray-200">
+      <h1 class="text-3xl mb-8">Lorem</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, porro debitis quia adipisci minima fugiat, illo cum ipsam maiores ducimus doloribus fuga distinctio! Perspiciatis doloremque asperiores nostrum, hic non commodi atque illum voluptatibus quis aut! Harum ducimus commodi possimus minima aperiam minus quisquam alias aut expedita obcaecati, sapiente molestiae quidem sequi adipisci voluptatibus enim dolore dolores molestias ipsam voluptas illo voluptate tempora eos? Id porro ad ut tempora. Voluptate veniam suscipit sint laborum a consequatur dicta officia voluptatum ullam sed sunt laboriosam eum architecto excepturi deserunt saepe consectetur, facere harum ipsum repellat, tenetur inventore aut impedit! Velit harum sunt ut?</p>
     </div>
+
+    <div class="m-8 flex flex-row text-gray-200 w-full">
+      <p class="w-1/2">item 1</p>
+      <p class="w-1/2">item 2</p>
+    </div>
+    
   </body>
 </html>
