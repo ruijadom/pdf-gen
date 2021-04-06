@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      table {
+        width: 100%;
+      }
+
+      th {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="bg-green-500">
+    <div class="m-8">
+      <h1 class="text-3xl mb-8">Items</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (passengers.length > 0) { %> <% passengers.forEach(passenger =>
+          { %>
+          <tr>
+            <td><%= passenger.name %></td>
+          </tr>
+          <% }); %> <% } %>
+        </tbody>
+        
+      </table>
+    </div>
+  </body>
+</html>

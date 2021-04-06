@@ -1,0 +1,16 @@
+{
+  "name": "pdf-gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ruijadom/pdf-gen.git",
+  "author": "ruijadom <ruijadomingues@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "puppeteer": "^8.0.0"
+  }
+}
